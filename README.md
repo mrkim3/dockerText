@@ -30,6 +30,12 @@ docker rm --force web-server
 docker run -p 8888:8000 --name web-server web-server-build
 
 
+echo $CR_PAT | docker login ghcr.io -u USERNAME --password-stdin
+
+vim ~/.zshrc 
+export CR_PAT=YOUR_TOKEN 저장 
+source ~/.zshrc 바로 실행
+
 commit - back up
 build - 이미지 만듬
 push , pull
