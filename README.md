@@ -36,6 +36,10 @@ vim ~/.zshrc
 export CR_PAT=YOUR_TOKEN 저장 
 source ~/.zshrc 바로 실행
 
+docker login ghcr.io -u mrkim3 -p 어쩌고저쩌고 
+
+docker push ghcr.io/mrkim3/my-ubuntu:1.0      
+
 commit - back up
 build - 이미지 만듬
 push , pull
